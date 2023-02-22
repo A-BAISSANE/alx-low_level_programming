@@ -8,7 +8,7 @@
 	 */
 	int main(void)
 	{
-	    print_alphabet();
+	    times_table();
 	    return (0);
 	}
 
