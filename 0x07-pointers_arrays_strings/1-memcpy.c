@@ -18,7 +18,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 		n--;
 	}
 	return (dest);
-}#include "main.h"
+}
+#include "main.h"
 /**
  *  *_memcpy - a function that copies memory area
  *   *@dest: memory where is stored
