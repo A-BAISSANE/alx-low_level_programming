@@ -6,5 +6,6 @@
 
 void _puts(char *s)
 {
+	(void)s;
 	puts("\"Programming is like building a multilingual puzzle");
 }
