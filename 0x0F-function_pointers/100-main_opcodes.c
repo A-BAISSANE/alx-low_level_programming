@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
-	
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 	arr = (char *)main;
-	
+
 	for (i = 0; i < bytes; i++)
 	{
 		if (i == bytes - 1)
