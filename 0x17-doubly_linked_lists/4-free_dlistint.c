@@ -1,11 +1,17 @@
-#include <stdlib.h>
-#include "your_dlistint_header.h" // Include your dlistint header file
+#include "lists.h"
 
-void free_dlistint(dlistint_t *head) {
-    dlistint_t *current = head;
-    while (current != NULL) {
-        dlistint_t *temp = current;
-        current = current->next;
-        free(temp);
-    }
+/**
+ * free_dlistint - Frees a linked dlistint_t list.
+ * @head: The head of the dlistint_t list.
+ */
+void free_dlistint(dlistint_t *head)
+{
+	dlistint_t *tmp;
+
+	while (head)
+	{
+		tmp = head->next;
+		free(head);
+		head = tmp;
+	}
 }
